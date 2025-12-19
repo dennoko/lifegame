@@ -1,0 +1,17 @@
+Shader "Hidden/LifeGameExtension/Lite/OpaqueOutline"
+{
+    Properties
+    {
+        lilProperties "DefaultLite"
+        lilProperties "DefaultOpaque"
+        lilProperties "lilCustomShaderProperties.lilblock"
+    }
+
+    lilPassShaderName "Hidden/LifeGameExtension/ltspass_lite_opaque"
+    lilSubShaderTags {"RenderType" = "Opaque" "Queue" = "Geometry"}
+    lilSubShaderBRP "DefaultUsePassOutline"
+    lilSubShaderURP "DefaultUsePassOutline"
+    lilSubShaderHDRP "DefaultUsePassOutline"
+
+    CustomEditor "LifeGameExtensionInspector"
+}

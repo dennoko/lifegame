@@ -1,0 +1,17 @@
+Shader "LifeGameExtension/[Optional] LiteOverlayOnePass"
+{
+    Properties
+    {
+        lilProperties "DefaultLite"
+        lilProperties "DefaultTransparent"
+        lilProperties "lilCustomShaderProperties.lilblock"
+    }
+
+    lilPassShaderName "Hidden/LifeGameExtension/ltspass_lite_transparent"
+    lilSubShaderTags {"RenderType" = "TransparentCutout" "Queue" = "AlphaTest+10"}
+    lilSubShaderBRP "DefaultUsePassOverlayNoForwardAdd"
+    lilSubShaderURP "DefaultUsePassOverlay"
+    lilSubShaderHDRP "DefaultUsePassOverlay"
+
+    CustomEditor "LifeGameExtensionInspector"
+}

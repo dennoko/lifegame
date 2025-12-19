@@ -1,0 +1,17 @@
+Shader "Hidden/LifeGameExtension/Tessellation/TransparentOutline"
+{
+    Properties
+    {
+        lilProperties "Default"
+        lilProperties "DefaultTransparent"
+        lilProperties "lilCustomShaderProperties.lilblock"
+    }
+
+    lilPassShaderName "Hidden/LifeGameExtension/ltspass_tess_transparent"
+    lilSubShaderTags {"RenderType" = "TransparentCutout" "Queue" = "AlphaTest+10"}
+    lilSubShaderBRP "DefaultUsePassOutline"
+    lilSubShaderURP "DefaultUsePassOutline"
+    lilSubShaderHDRP "DefaultUsePassOutline"
+
+    CustomEditor "LifeGameExtensionInspector"
+}

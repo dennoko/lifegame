@@ -1,0 +1,17 @@
+Shader "LifeGameExtension/[Optional] FurOnly/TwoPass"
+{
+    Properties
+    {
+        lilProperties "Default"
+        lilProperties "DefaultFurTransparent"
+        lilProperties "lilCustomShaderProperties.lilblock"
+    }
+
+    lilPassShaderName "Hidden/LifeGameExtension/FurTwoPass"
+    lilSubShaderTags {"RenderType" = "TransparentCutout" "Queue" = "Transparent"}
+    lilSubShaderBRP "DefaultUsePassFurOnlyTwoPass"
+    lilSubShaderURP "DefaultUsePassFurOnly"
+    lilSubShaderHDRP "DefaultUsePassFurOnly"
+
+    CustomEditor "LifeGameExtensionInspector"
+}

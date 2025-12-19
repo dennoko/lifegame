@@ -1,0 +1,17 @@
+Shader "Hidden/LifeGameExtension/Tessellation/Opaque"
+{
+    Properties
+    {
+        lilProperties "Default"
+        lilProperties "DefaultOpaque"
+        lilProperties "lilCustomShaderProperties.lilblock"
+    }
+
+    lilPassShaderName "Hidden/LifeGameExtension/ltspass_tess_opaque"
+    lilSubShaderTags {"RenderType" = "Opaque" "Queue" = "Geometry"}
+    lilSubShaderBRP "DefaultUsePass"
+    lilSubShaderURP "DefaultUsePass"
+    lilSubShaderHDRP "DefaultUsePass"
+
+    CustomEditor "LifeGameExtensionInspector"
+}

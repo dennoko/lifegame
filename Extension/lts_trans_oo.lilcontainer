@@ -1,0 +1,17 @@
+Shader "LifeGameExtension/[Optional] OutlineOnly/Transparent"
+{
+    Properties
+    {
+        lilProperties "Default"
+        lilProperties "DefaultTransparent"
+        lilProperties "lilCustomShaderProperties.lilblock"
+    }
+
+    lilPassShaderName "Hidden/LifeGameExtension/ltspass_transparent"
+    lilSubShaderTags {"RenderType" = "TransparentCutout" "Queue" = "AlphaTest+10"}
+    lilSubShaderBRP "DefaultUsePassOutlineOnly"
+    lilSubShaderURP "DefaultUsePassOutlineOnly"
+    lilSubShaderHDRP "DefaultUsePassOutlineOnly"
+
+    CustomEditor "LifeGameExtensionInspector"
+}

@@ -1,0 +1,11 @@
+
+        //----------------------------------------------------------------------------------------------------------------------
+        // Custom Properties
+        _SimulationTex ("Texture (Simulation Result)", 2D) = "white" {}
+        _GridResolution ("Grid Resolution (Match Simulation)", Float) = 64
+        [Enum(Square, 0, Round, 1)] _ShapeType ("Shape Type", Float) = 0
+        _Padding ("Shape Padding", Range(0, 0.5)) = 0.05
+        
+        [Header(Colors)]
+        [HDR] _AliveColor ("Alive Color", Color) = (0, 1, 0, 1)
+        _DeadColor ("Dead Color", Color) = (0, 0, 0, 1)
